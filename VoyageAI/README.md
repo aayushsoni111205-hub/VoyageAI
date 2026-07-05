@@ -82,6 +82,10 @@ For every trip request, VoyageAI generates:
 ## Packing
 <img width="1917" height="906" alt="Packing" src="https://github.com/user-attachments/assets/6fb6c3f3-f278-4b73-b49a-69e7c37079c0" />
 
+## PDF Download
+<img width="571" height="821" alt="Screenshot 2026-07-05 194149" src="https://github.com/user-attachments/assets/434dfe90-10ea-4828-9205-4aa3bd74b6f4" />
+
+
 
 
 
