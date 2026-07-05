@@ -33,6 +33,18 @@ skills modules (`skills/*.py`) to generate recommendations. A Gemini wrapper
 (`tools/gemini.py`) is included as an integration-ready component for future
 LLM-powered enhancements.
 
+## Features
+
+- Multi-agent travel planning
+- Weather analysis
+- Budget estimation
+- Hotel recommendations
+- Personalized itinerary
+- Smart packing checklist
+- Interactive Streamlit UI
+- PDF export
+- Destination map
+
 ## Output
 
 For every trip request, VoyageAI generates:
@@ -165,6 +177,14 @@ streamlit run app.py
 ```
 
 Open the URL Streamlit prints (usually `http://localhost:8501`).
+
+## Deployment
+
+VoyageAI is deployment-ready and can be hosted on:
+
+- Streamlit Community Cloud
+- Google Cloud Run
+- Render
 
 ## Concepts Demonstrated
 
