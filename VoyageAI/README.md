@@ -1,4 +1,4 @@
-<img width="1917" height="906" alt="Packing" src="https://github.com/user-attachments/assets/7d20f296-8dee-4043-a33f-35894395a2b6" /># VoyageAI — Autonomous AI Travel Concierge
+# VoyageAI — Autonomous AI Travel Concierge
 
 VoyageAI is a multi-agent travel planning system. A user submits a trip
 request (source city, destination, days, budget, travel dates, interests,
