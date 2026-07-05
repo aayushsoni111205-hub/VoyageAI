@@ -113,7 +113,6 @@ pip install -r requirements.txt
 - Google Gemini (`google-genai`)
 - python-dotenv, requests, pandas, reportlab, Pillow
 
-## Installation
 
 ```bash
 git clone <your-repo-url>
