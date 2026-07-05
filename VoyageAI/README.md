@@ -44,21 +44,27 @@ For every trip request, VoyageAI generates:
 - ✅ Local travel tips
 - ✅ Downloadable PDF of the full plan
 
-##ScreenShorts
+## ScreenShorts
 
-##Home
+## Home
 <img width="1912" height="890" alt="Home" src="https://github.com/user-attachments/assets/6140c033-d475-403e-a27d-f596bbc78331" />
-##Destination
+
+## Destination
 <img width="1903" height="781" alt="Destination" src="https://github.com/user-attachments/assets/b742d1ae-d7ab-479b-a096-d1684e9d7db5" />
-##Weather
+
+## Weather
 <img width="1902" height="655" alt="Weather" src="https://github.com/user-attachments/assets/1381597e-d36e-4f10-a9b4-2ca31c80531c" />
-##Budget
+
+## Budget
 <img width="1880" height="801" alt="Budget" src="https://github.com/user-attachments/assets/de4a2e80-9c31-4149-8602-5e57f2f8e80e" />
-##Hotel
+
+## Hotel
 <img width="1917" height="872" alt="Hotel" src="https://github.com/user-attachments/assets/488e4ce6-a3cc-4435-b240-d92e2a61572d" />
-##Itinerary
+
+## Itinerary
 <img width="1902" height="837" alt="Itinerary" src="https://github.com/user-attachments/assets/ce9ab5cc-41d7-4616-bb7c-85fee6883c57" />
-##Packing
+
+## Packing
 <img width="1917" height="906" alt="Packing" src="https://github.com/user-attachments/assets/6fb6c3f3-f278-4b73-b49a-69e7c37079c0" />
 
 
