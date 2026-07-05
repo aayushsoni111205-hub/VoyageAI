@@ -21,14 +21,17 @@ sub-agents to assemble a complete trip plan.
       │         │          │           │             │
       └─────────┴──────────┴───────────┴─────────────┘
                        │
-                 Gemini + Tools
+                 Skills + Shared Tools
 ```
 
-Each sub-agent is a small class (`agents/*.py`) that renders a prompt
-template (`prompts/*.py`) with the trip context and calls Gemini through a
-single shared wrapper (`tools/gemini.py`). The Planner Agent
-(`agents/planner.py`) runs all sub-agents concurrently and assembles the
-results into one report, which `tools/pdf_generator.py` can export as a PDF.
+Each sub-agent is implemented as a focused Python class (`agents/*.py`)
+responsible for a specific planning task such as weather analysis, budgeting,
+hotel recommendations, itinerary generation, or packing suggestions.
+
+The current version uses deterministic, rule-based logic and reusable
+skills modules (`skills/*.py`) to generate recommendations. A Gemini wrapper
+(`tools/gemini.py`) is included as an integration-ready component for future
+LLM-powered enhancements.
 
 ## Output
 
@@ -44,7 +47,7 @@ For every trip request, VoyageAI generates:
 - ✅ Local travel tips
 - ✅ Downloadable PDF of the full plan
 
-## ScreenShorts
+## Screenshots
 
 ## Home
 <img width="1912" height="890" alt="Home" src="https://github.com/user-attachments/assets/6140c033-d475-403e-a27d-f596bbc78331" />
@@ -129,7 +132,7 @@ well-defined, reusable capability instead of one-off inline logic — but the
 mechanism is different. If this project adopts real ADK agents later, these
 modules could be exposed as ADK tools without changing their internals.
 
-## Installation (Skills addition)
+## Installation 
 
 No new dependencies were introduced by this change — `skills/` uses only
 the Python standard library. If you're setting up the project fresh:
@@ -142,7 +145,7 @@ pip install -r requirements.txt
 
 - Python 3.11+
 - Streamlit
-- Google Gemini (`google-genai`)
+- Google Gemini SDK (`google-genai`) – integration-ready wrapper included
 - python-dotenv, requests, pandas, reportlab, Pillow
 
 
@@ -163,9 +166,22 @@ streamlit run app.py
 
 Open the URL Streamlit prints (usually `http://localhost:8501`).
 
+## Concepts Demonstrated
+
+This project demonstrates several concepts commonly used in AI-agent systems:
+
+- Multi-agent architecture
+- Planner-agent orchestration
+- Reusable agent skills
+- Input validation and configuration management
+- PDF report generation
+- Streamlit deployment readiness
+
 ## Future roadmap
 
 - Live weather API integration in `WeatherAgent`
+- Google ADK orchestration
+- MCP Server integration
 - Real hotel-search tool integration (e.g. via an MCP server)
 - Multi-turn refinement ("shorten day 2", "make it cheaper")
 - Deployment guide (Streamlit Community Cloud / Cloud Run)
